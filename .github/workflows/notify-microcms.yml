@@ -27,5 +27,5 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           repository: blancessanchez/yns-exercise-private
-          event-type: update-private-repository
+          event-type: notify-microcms
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
