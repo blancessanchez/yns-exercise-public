@@ -1,1 +1,0 @@
-# yns-exercise-public
