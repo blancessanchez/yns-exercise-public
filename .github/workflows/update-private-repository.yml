@@ -31,5 +31,3 @@ jobs:
           repository: blancessanchez/yns-exercise-private
           event-type: notify-microcms
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
-        env:
-           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
