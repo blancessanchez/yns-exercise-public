@@ -22,12 +22,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - run: |
-        echo Notify MicroCMS
-      - name: Repository Dispatch
-        uses: peter-evans/repository-dispatch@v2
-        with:
-          token: ${{ secrets.PAT }}
-          repository: blancessanchez/yns-exercise-private
-          event-type: notify-microcms
-          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+    - run: |
+      echo Notify MicroCMS
+    - name: Repository Dispatch
+      uses: peter-evans/repository-dispatch@v2
+      with:
+        token: ${{ secrets.PAT }}
+        repository: blancessanchez/yns-exercise-private
+        event-type: notify-microcms
+        client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
