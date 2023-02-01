@@ -2,7 +2,7 @@
 3lw_nhsh6
 
 # title
-Title Title Title Title
+Edit Article 2
 
 # body
-Body Body Body Body Body 
+Edit edit edit
